@@ -9,18 +9,28 @@
 body{
   font-family: 'Work Sans', sans-serif;
 }
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 
 /* header style */
 header{
  background: rgba(255, 144, 14, 0.10);
- padding: 50px 240px;
+ padding: 50px  240px ;
 }
 .header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .logo{}
-.logo h2{}
+.logo h2{color: var(--dark-01, #131313);
+text-align: center;
+font-size:2.8rem ;
+font-weight: 700;
+
+}
 .menu {}
 .menu ul{
   display: flex;
@@ -32,8 +42,48 @@ header{
 .menu ul li a{
   color: var(--dark-02, #424242);
 text-align: center;
-font-size: 18px;
+font-size: 1.12rem;
 font-weight: 500;
 line-height: 26px; /* 144.444% */
 text-decoration: none;
+}
+
+/* banner style */
+.banner{}
+.banner-text{
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 50px;
+  
+}
+.banner-text h1{
+  color: var(--dark-01, #131313);
+text-align: center;
+font-size:4rem ;
+font-weight: 700;
+
+}
+.banner-text p{
+  color: var(--dark-03, #727272);
+text-align: center;
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+margin: 30px 0;
+}
+.btn{
+  border-radius: 8px;
+background: #FF900E;
+padding: 20px 25px;
+  color: #FFF;
+font-size: 1.25rem;
+font-weight: 600;
+
+}
+.banner-img {
+  margin-top: 50px;
+}
+.banner-img img{
+  width: 100%;
 }
