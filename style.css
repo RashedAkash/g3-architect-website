@@ -1,4 +1,39 @@
+/* work sans font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+/* common style */
+*{
+  margin: 0;
+  padding: 0;
+}
 body{
   font-family: 'Work Sans', sans-serif;
+}
+
+/* header style */
+header{
+ background: rgba(255, 144, 14, 0.10);
+ padding: 50px 240px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{}
+.logo h2{}
+.menu {}
+.menu ul{
+  display: flex;
+}
+.menu ul li{
+  list-style: none;
+  margin-left: 26px;
+}
+.menu ul li a{
+  color: var(--dark-02, #424242);
+text-align: center;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px; /* 144.444% */
+text-decoration: none;
 }
