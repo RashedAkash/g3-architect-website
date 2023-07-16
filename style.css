@@ -245,6 +245,12 @@ padding: 40px;
     text-align: center;
     padding: 10px;
 }
+.sposors-img {
+      flex-direction: column;
+}
+.sposors-img img {
+    margin-bottom: 30px;
+}
 }
 
 
@@ -284,6 +290,12 @@ header {
 .facts-title {
     text-align: center;
     padding: 10px;
+}
+.sposors-img {
+      flex-direction: column;
+}
+.sposors-img img {
+    margin-bottom: 30px;
 }
 
 }
