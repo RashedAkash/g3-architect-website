@@ -5,6 +5,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 body{
   font-family: 'Work Sans', sans-serif;
@@ -103,7 +104,9 @@ main{
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
 }
-.team-img img{}
+.team-img img {
+    width: 100%;
+}
 .team-content{
   padding-left: 70px;
   width: 40%;
@@ -130,7 +133,47 @@ font-weight: 700;
   color: var(--dark-01, #131313);
 font-weight: 700;
 }
+/* facts-container style */
+.facts-area {}
+.facts-title{}
+.facts-title h1{
+  color: var(--dark-01, #131313);
+font-size: 2.8rem;
+font-weight: 700;
+margin-bottom: 24px;
+}
+.facts-title p{
+  color: var(--dark-03, #727272);
+font-size: 1rem;
+font-weight: 400;
+line-height: 26px; /* 162.5% */
+}
+.facts-container{
+  display: flex;
+  justify-content: space-around;
+}
+.single-facts{
+  border-radius: 8px;
+border: 1px solid #FF900E;
+padding: 60px 40px;
+text-align: center;
+margin-top: 100px;
+}
+.single-facts img{}
+.single-facts h4{
+  color: var(--dark-02, #424242);
+  font-size: 2.8rem;
+font-weight: 600;
+
+
+}
+.single-facts p{
+  color: var(--dark-03, #727272);
+font-size: 1.25rem;
+font-weight: 600;
+}
 /* responsive */
+
 
 /* mobile device */
 @media screen and (max-width:576px) {
@@ -162,7 +205,25 @@ font-weight: 700;
       padding: 15px 15px; 
     font-size: 1rem;    
 }
+.team-container {
+      flex-direction: column;
 }
+.team-img {
+        grid-template-columns: 1fr;
+  }
+  .team-img img {
+    width: 100%;
+}
+  .team-content {
+    padding-left: 20px;
+    width: 90%;
+    margin-top: 30px;
+}
+}
+
+
+/* medium device */
+
 @media screen and (min-width:576px) and (max-width:992px) {
  .header {
       flex-direction: column;
@@ -177,10 +238,36 @@ header {
       font-size: 3rem;
     
 }
+.team-container {
+      flex-direction: column;
 }
+.team-img {
+        grid-template-columns: 1fr;
+  }
+  .team-img img {
+    width: 100%;
+}
+  .team-content {
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+}
+
+/* large device */
 
 @media screen and (min-width:992px) and (max-width:1160px){
   header {
       padding: 30px;
+}
+.team-container {
+      flex-direction: column;
+}
+.team-content {
+    padding-left: 10px;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
 }
 }
